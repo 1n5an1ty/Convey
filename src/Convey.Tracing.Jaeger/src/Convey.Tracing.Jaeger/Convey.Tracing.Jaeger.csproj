@@ -9,13 +9,12 @@
     <Title>Convey.Tracing.Jaeger</Title>
     <PackageId>Convey.Tracing.Jaeger</PackageId>
     <PackageTags>Convey.Tracing.Jaeger</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.4.349.1</Version>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Convey\src\Convey\Convey.csproj" />
-  </ItemGroup>
   
   <ItemGroup>
+    <PackageReference Include="Convey" Version="0.4.349" />
     <PackageReference Include="Jaeger" Version="0.3.7" />
     <PackageReference Include="OpenTracing.Contrib.NetCore" Version="0.6.2" />
   </ItemGroup>

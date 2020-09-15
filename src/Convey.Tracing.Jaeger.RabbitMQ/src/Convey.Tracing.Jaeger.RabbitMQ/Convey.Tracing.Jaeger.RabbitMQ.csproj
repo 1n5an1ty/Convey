@@ -9,11 +9,13 @@
     <Title>Convey.Tracing.Jaeger.RabbitMQ</Title>
     <PackageId>Convey.Tracing.Jaeger.RabbitMQ</PackageId>
     <PackageTags>Convey.Tracing.Jaeger.RabbitMQ</PackageTags>
+    <Version>0.4.349.1</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Convey.MessageBrokers.RabbitMQ\src\Convey.MessageBrokers.RabbitMQ\Convey.MessageBrokers.RabbitMQ.csproj" />
-    <ProjectReference Include="..\..\..\Convey.Tracing.Jaeger\src\Convey.Tracing.Jaeger\Convey.Tracing.Jaeger.csproj" />
+    <PackageReference Include="Convey.MessageBrokers.RabbitMQ" Version="0.4.349.1" />
+    <PackageReference Include="Convey.Tracing.Jaeger" Version="0.4.349.1" />
   </ItemGroup>
 
 </Project>

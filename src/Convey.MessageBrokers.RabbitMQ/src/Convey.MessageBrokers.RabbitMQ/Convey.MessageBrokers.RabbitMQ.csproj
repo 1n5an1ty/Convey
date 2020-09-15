@@ -9,14 +9,13 @@
     <Title>Convey.MessageBrokers.RabbitMQ</Title>
     <PackageId>Convey.MessageBrokers.RabbitMQ</PackageId>
     <PackageTags>Convey.MessageBrokers.RabbitMQ</PackageTags>
+    <Version>0.4.349.1</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Convey\src\Convey\Convey.csproj" />
-    <ProjectReference Include="..\..\..\Convey.MessageBrokers\src\Convey.MessageBrokers\Convey.MessageBrokers.csproj" />
-  </ItemGroup>
   
   <ItemGroup>
+    <PackageReference Include="Convey" Version="0.4.349" />
+    <PackageReference Include="Convey.MessageBrokers" Version="0.4.349" />
     <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="3.1.2" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.2" />
     <PackageReference Include="RabbitMQ.Client" Version="6.2.1" />
